@@ -174,7 +174,7 @@ const ChannelSeasonSec = () => {
                         sm={8}
                         lg={9}
                         xm={12}
-                        display={"flex"}
+                        display={"flex"}o0
                         justifyContent={"center"}
                         flexDirection={"column"}
                         // className={matches ? classes.mobileParent : classes.parent}
