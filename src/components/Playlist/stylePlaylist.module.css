@@ -6,7 +6,7 @@
   letter-spacing: 0em;
   text-align: left;
   margin-top: 2rem;
-  margin-bottom: 0px;
+  margin-bottom: 2rem;
 
   color: #2c3c4d;
 }
@@ -50,11 +50,14 @@
   width: 100%;
   background: #ffffff;
   padding-top: 8px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px;
 }
 .description {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 .time {
   font-family: Inter;
@@ -62,13 +65,13 @@
   font-weight: normal;
   font-size: 14px;
   color: #647d94;
+  padding: 0px 20px;
 }
 .detail {
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
-
   color: #2c3c4d;
 }
 .icon {
@@ -79,6 +82,9 @@
 .play {
   position: relative;
   top: 2px;
+}
+.audioIcon{
+  /* margin-right: 16px; */
 }
 
 .cardImage {
@@ -99,4 +105,21 @@
   font-size: 22px;
 
   color: #000000;
+}
+
+@media only screen and (max-width:468px) {
+  .result2, .result{
+    text-align: center;
+  }
+  .detail{
+    padding-right: 20px;
+  }
+  .time{
+    padding:0px ;
+  }
+  .topButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
@@ -6,15 +6,18 @@ import classes from "./landing.module.css";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import Layout from "../../components/Layout/";
 import ChannelSeasonSec from "../../components/channelSeasonSec";
+import { VerseContext } from "../../context/Verse";
+import Playlist from "../../components/Playlist/";
 
 const index = () => {
   const matches = useMediaQuery("(min-width:400px)");
-
+  const { showCard } = React.useContext(VerseContext);
   return (
     <Layout>
       <div style={{ background: "#e5e5e5", padding: "3rem" }}>
-        <ChannelSeasonSec />
+        {showCard ? <Playlist /> : <ChannelSeasonSec />}
       </div>
+      <br />
       <Container>
         <Grid
           container
