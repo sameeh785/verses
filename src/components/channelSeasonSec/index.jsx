@@ -174,7 +174,8 @@ const ChannelSeasonSec = () => {
                         sm={8}
                         lg={9}
                         xm={12}
-                        display={"flex"}o0
+                        display={"flex"}
+                        o0
                         justifyContent={"center"}
                         flexDirection={"column"}
                         // className={matches ? classes.mobileParent : classes.parent}
@@ -290,9 +291,11 @@ const ChannelSeasonSec = () => {
                         flexDirection={"column"}
                         // className={matches ? classes.mobileParent : classes.parent}
                       >
-                        <div className={classes.sideDivButton}>
-                          <button>View</button>
-                        </div>
+                        <a href={item.url}>
+                          <div className={classes.sideDivButton}>
+                            <button>View</button>
+                          </div>
+                        </a>
                       </Grid>
                     </Grid>
                   </div>
@@ -441,9 +444,11 @@ const ChannelSeasonSec = () => {
                           flexDirection={"column"}
                           // className={matches ? classes.mobileParent : classes.parent}
                         >
-                          <div className={classes.sideDivButton}>
-                            <button>View</button>
-                          </div>
+                          <a href={item.url}>
+                            <div className={classes.sideDivButton}>
+                              <button>View</button>
+                            </div>
+                          </a>
                         </Grid>
                       </Grid>
                     </div>

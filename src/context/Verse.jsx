@@ -43,6 +43,7 @@ const VerseContextData = ({ children }) => {
           return {
             title: item.data.title,
             date_published: item.data.date_published,
+            url: item.data.link,
             timestamp: item.timestamp,
             date,
             time,
@@ -58,6 +59,7 @@ const VerseContextData = ({ children }) => {
           return {
             title: item.title,
             date_published: item.date_published,
+            url: item.url,
             date,
             time,
           };
@@ -138,6 +140,7 @@ const VerseContextData = ({ children }) => {
           return {
             title: item.data.title,
             date_published: item.data.date_published,
+            url: item.data.link,
             channel: dummyChannelList.channels.find((data) => {
               return data.id === item.data.channel_id;
             }),
@@ -157,6 +160,8 @@ const VerseContextData = ({ children }) => {
             title: item.title,
             date_published: item.date_published,
             channel: item.channel.name,
+            url: item.url,
+
             date,
             time,
           };
@@ -175,6 +180,7 @@ const VerseContextData = ({ children }) => {
       }
     }
   };
+  console.log(storeData, "data");
 
   return (
     <VerseContext.Provider
